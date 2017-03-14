@@ -29,7 +29,7 @@ Fig. 1: The motor drive system
 
 Your report should include:
 -
-- 
+-
 
 ## Content
 
@@ -41,27 +41,28 @@ Your report should include:
 
 #### Part B: Analysis
 You will apply these analyses to all three models that you have constructed.
-1.	Apply rated voltages to both field and armature. Obtain the following variations against time. Make sure that the system reaches its steady state. Plots in each part should be on the same axis.
-a.	Motor speed and torque
-b.	Armature voltage and current
-c.	Motor torque and load torque
-d.	Motor speed and load speed
+
+1. Apply rated voltages to both field and armature. Obtain the following variations against time. Make sure that the system reaches its steady state. Plots in each part should be on the same axis.
+   * Motor speed and torque
+   *	Armature voltage and current
+   *	Motor torque and load torque
+   *	Motor speed and load speed
 2.	Apply a stepped armature voltage until its rated value such that the armature current never exceeds 150% of its rated value.
-a.	Motor speed and torque
-b.	Armature voltage and current
-c.	Motor torque and load torque
-d.	Motor speed and load speed
+   *	Motor speed and torque
+   *	Armature voltage and current
+	 *  Motor torque and load torque
+   *  Motor speed and load speed
 3.	Decrease the field voltage to its 50% when the systems operates at its steady state with its rated values initially.
-a.	Motor speed and torque
-b.	Armature voltage and current
-c.	Motor torque and load torque
-d.	Motor speed and load speed
+   *	Motor speed and torque
+   *	Armature voltage and current
+   *	Motor torque and load torque
+   *	Motor speed and load speed
 4.	Load torque variations
-e.	Motor speed and torque
-f.	Armature voltage and current
-g.	Motor torque and load torque
-h.	Motor speed and load speed
-i.
+   *	Motor speed and torque
+   *	Armature voltage and current
+   *	Motor torque and load torque
+   *	Motor speed and load speed
+
 
 #### Part C: Comments
 1.
