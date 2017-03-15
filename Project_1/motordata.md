@@ -1,43 +1,59 @@
-## Project 1 - Data
+## Project 1 - Data-Sheets
+
+## How to choose the motor-load combination?
+
+The motor parameters will be assigned randomly, based on the last digit of your student number. For example if your student number is 1244839, then take the modulus 5 of the last digit:
+
+mod-5 (9) = 4
+
+Then you need to use the parameters of the Motor#4 for your project.
+
+## Motor Data-Sheet
+
+In this project, you will be all using small permanent-magnet brush DC motors from [Maxon Motors](http://www.maxonmotor.com).
+
 Please refer to the data according to the number you are assigned to.
 
-| DC motor| Data-1| Data-2| Data-3| Data-4| Data-5|
+| DC motor| Motor#0| Motor#1| Motor#2| Motor#3| Motor#4|
 | :-----: |:-----:| :----:|:-----:| :----:|:-----:|
 | Rated armature voltage (V) | 70 | 48 | 24 | 90 | 12 |
-| Rated output power (W)| 250 | 192 | 121.3 | 359 | 26.1 |
+| Rated output power (W)| 250 | 192 | 121 | 359 | 26 |
 | Rated speed (rpm)  | 2490 | 3226 | 2700 | 1517 | 4700 |
 | Armature resistance (Ω)    | 1.41 | 0.7 | 0.43 | 1.45 | 0.6 |
 | Armature inductance (mH)    | 0.644 | 1.3 | 0.9 | 5.4 | 0.35 |
-| Rated field voltage    | 1 | 2 | 3 | 4 | 5 |
-| Field resistance       | 1 | 2 | 3 | 4 | 5 |
 | Back EMF constant (volts/rad/sec)|38.9 rpm/V | 0.1413 | 0.08 | 0.5730 | 0.0191 |
-| Motor inertia (gcm²) | 1340 |6355.4| 2118.45 | 21890.7 | 155.4 |
+| Motor inertia (gcm²) | 1340 |6355| 2118 | 21890 | 155 |
 
-| Mechanical system| Data-1| Data-2| Data-3| Data-4| Data-5|
+| Mechanical system| Load#0| Load#1| Load#2| Load#3| Load#4|
 | :--------------: |:-----:| :----:|:-----:| :----:|:-----:|
-| Gearbox ratio (N1:N2)         | 1 | 2 | 3 | 4 | 5 |
-| Load side friction coefficient| 1 | 2 | 3 | 4 | 5 |
-| Shaft stiffness                | 1 | 2 | 3 | 4 | 5 |
-| Load inertia                   | 1 | 2 | 3 | 4 | 5 |
-| Rated load torque              | 1 | 2 | 3 | 4 | 5 |
+| Gearbox ratio (N1:N2)         | 2:1 | 3:1 | 2:1 | 1:1 | 4:1 |
+| Load side friction coefficient (mNm.s/rad)| 0.4 | 0.5 | 0.18 | 0.36 | 0.06 |
+| Motor Shaft stiffness (Nm/rad)   | 15 | 8 | 7.5 | 36 | 1.2 |
+| Load inertia (gcm²)            | 1800 | 9000 | 1800 | 36000 | 360 |
+| Load torque (Constant) (Nm)       | 1.6 | 1.5 | 0.75 | 1.9 | 0.18 |
 
-<!---
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
--->
-
-First data:
-http://www.maxonmotor.com/maxon/view/category/motor?target=filter&filterCategory=DC-max
+(*) Assume the gearbox is lossless.
+(*) No coulomb friction, only viscous friction
 
 
-Second data-page 7-C42-L50-10
+If you require more information about the motors, please refer to the data sheets:
 
-Third data-page 5-C34-L60-10
+- Motor #0: http://www.maxonmotor.com/maxon/view/category/motor?target=filter&filterCategory=DC-max
 
-Fourth data-page 7-C42-L90-30
+- Motor #1: Page 7-C42-L50-10
 
-Fifth data - page 2-C23-L33-10
+- Motor #2: Page 5-C34-L60-10
 
+- Motor #3: Page 7-C42-L90-30
+
+- Motor #4: Page 2-C23-L33-10
+
+
+<!--- Diger Motor Datalari
 http://www.moog.com/literature/MCG/moc23series.pdf
+http://w3app.siemens.com/mcms/infocenter/dokumentencenter/ld/Documentsu20Catalogs/dc-motor/da12-2008-en.pdf
+http://ecatalog.weg.net/files/wegnet/WEG-specification-of-electric-motors-50039409-manual-english.pdf
+http://www.maxonmotor.com/maxon/view/category/motor?target=filter&filterCategory=DC-max
+http://www.kollmorgen.com/en-us/products/motors/brush-dc/permanent-magnet-dc-pmdc/
+http://www.moog.com/literature/MCG/moc23series.pdf
+-->

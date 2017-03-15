@@ -10,7 +10,7 @@ In this project, you will be dealing with:
 
 You may investigate the models you find on the internet, however the model that you will build and your results should be **completely on your OWN**.
 
-Please see the motor ratings and other parameters assigned to you. The motor drive system that you will model is shown in Fig. 1.
+Please see the [motor ratings and other parameters](https://github.com/odtu/ee462/blob/master/Project_1/motordata.md) assigned to you. The motor drive system that you will model is shown in Fig. 1.
 
 ![](./project1.png)
 
@@ -54,36 +54,24 @@ You will analyze three models that you have constructed using the conditions giv
 
 
 #### Part C: Comments
-1.
+
+Please explain both your models and your details as detailed as possible. You will be supplied with an evaluation sheet in the following days to help you determine the contents of your report. 
 
 ## Deadline:
 27/03/2017 23:59
 
 ## HINTS:
 
-* When constructing the models, go **step-by-step**. Do not try to implement the whole model at once, expect it to work without any problems.
+* When constructing the models, go **step-by-step**. First built a few components, check if it is working as intended, if it works then add new components. Do not try to implement the whole model at once, expect it to work without any problems.
 * Always be aware to use **correct units**.
 * Understand the **analytical model** before constructing the models.
-* If you have any problems with your models, you can always [open an issue in GitHub](https://guides.github.com/features/issues/) for online feedback, or visit the course assistant in the office hours.
+* If you have any problems with your models, you can always [open an issue in GitHub](https://guides.github.com/features/issues/) for online feedback, or visit the course assistant and lecturer during the office hours.
+*  Do not forget to cite to any external sources you used.
 
 ## Submission
 
-You have to submit at least the following two files:
+You have to submit at least the following files:
 
-- The Simulink models
-- A report describing your models in detail, with the parts explained below:
+- The Simulink models (either as a separate files or a combined model)
+- A project report describing your models in detail (Your simulation results should be embedded in your report).
 
-Your report should include:
--
--
-
-
-
-
-<!--- Hazır motor dataları
-http://w3app.siemens.com/mcms/infocenter/dokumentencenter/ld/Documentsu20Catalogs/dc-motor/da12-2008-en.pdf
-http://ecatalog.weg.net/files/wegnet/WEG-specification-of-electric-motors-50039409-manual-english.pdf
-http://www.maxonmotor.com/maxon/view/category/motor?target=filter&filterCategory=DC-max
-http://www.kollmorgen.com/en-us/products/motors/brush-dc/permanent-magnet-dc-pmdc/
-http://www.moog.com/literature/MCG/moc23series.pdf
--->
