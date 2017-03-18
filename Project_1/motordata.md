@@ -40,11 +40,11 @@ If you require more information about the motors, please refer to the data sheet
 
 - Motor #0: http://www.maxonmotor.com/maxon/view/category/motor?target=filter&filterCategory=DC-max
 
-- Motor #1: [Moog C42-L50-10](www.peromatic.ch/fileadmin/user_upload/PDF/MOOG/DC_MOTOREN/C42.pdf)
+- Motor #1: [Moog C42-L50-10](http://www.peromatic.ch/fileadmin/user_upload/PDF/MOOG/DC_MOTOREN/C42.pdf)
 
 - Motor #2: [Moog C34-L60-10](http://www.moog.com/content/dam/moog/literature/MCG/moc23series.pdf)
 
-- Motor #3: [Moog C42-L90-30](www.peromatic.ch/fileadmin/user_upload/PDF/MOOG/DC_MOTOREN/C42.pdf)
+- Motor #3: [Moog C42-L90-30](http://www.peromatic.ch/fileadmin/user_upload/PDF/MOOG/DC_MOTOREN/C42.pdf)
 
 - Motor #4:  [Moog C23-L33-10](http://www.moog.com/content/dam/moog/literature/MCG/moc23series.pdf)
 
