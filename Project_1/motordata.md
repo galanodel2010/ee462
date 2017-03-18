@@ -10,7 +10,7 @@ Then you need to use the parameters of the Motor#4 for your project.
 
 ## Motor Data-Sheet
 
-In this project, you will be all using small permanent-magnet brush DC motors from [Maxon Motors](http://www.maxonmotor.com).
+In this project, you will be all using small permanent-magnet brush DC motors from [Maxon Motors](http://www.maxonmotor.com) and [Moog](http://www.moog.com/)
 
 Please refer to the data according to the number you are assigned to.
 
@@ -40,13 +40,13 @@ If you require more information about the motors, please refer to the data sheet
 
 - Motor #0: http://www.maxonmotor.com/maxon/view/category/motor?target=filter&filterCategory=DC-max
 
-- Motor #1: Page 7-C42-L50-10
+- Motor #1: [Moog C42-L50-10](www.peromatic.ch/fileadmin/user_upload/PDF/MOOG/DC_MOTOREN/C42.pdf)
 
-- Motor #2: Page 5-C34-L60-10
+- Motor #2: [Moog C34-L60-10](http://www.moog.com/content/dam/moog/literature/MCG/moc23series.pdf)
 
-- Motor #3: Page 7-C42-L90-30
+- Motor #3: [Moog C42-L90-30](www.peromatic.ch/fileadmin/user_upload/PDF/MOOG/DC_MOTOREN/C42.pdf)
 
-- Motor #4: Page 2-C23-L33-10
+- Motor #4:  [Moog C23-L33-10](http://www.moog.com/content/dam/moog/literature/MCG/moc23series.pdf)
 
 
 <!--- Diger Motor Datalari
