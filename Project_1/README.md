@@ -32,7 +32,7 @@ III. Construct a model of this system using the **DC motor** block and other blo
 
 You will analyze three models that you have constructed using the conditions given below. First make sure, all three models' results are consistent with each other. Plot the following and comment on the variation of each variable, and explain as detailed as possible.
 
-1. Apply rated voltages to both armature and field winding (if applicable). Obtain the following variations against time. Make sure that the system reaches the steady state. 
+1. Apply rated voltages to both armature and field winding (if applicable). Obtain the following variations against time. Make sure that the system reaches the steady state, and start these from t=0 to steady state.
 
    * Motor speed and torque
    * Back-emf voltage and current
@@ -40,7 +40,7 @@ You will analyze three models that you have constructed using the conditions giv
    * Motor speed and load speed
    * Overall system efficiency
 
-2. Decrease the armature voltage to its 50% when the system is operating at its steady state at the rated values. 
+2. Decrease the armature voltage to its 50% when the system is operating at its steady state at the rated values and plot the following:
 
    *	Motor speed and torque
    *	Armature voltage, current and electric power (comment on the operating mode)
