@@ -32,22 +32,28 @@ III. Construct a model of this system using the **DC motor** block and other blo
 
 You will analyze three models that you have constructed using the conditions given below. First make sure, all three models' results are consistent with each other. Plot the following and comment on the variation of each variable, and explain as detailed as possible.
 
-1. Apply rated voltages to both armature and field winding (if applicable). Obtain the following variations against time. Make sure that the system reaches the steady state, and start these from t=0 to steady state.
+**Part 1.**  This part to be completed with Model-I 
+
+Apply rated voltages to both armature and field winding (if applicable). Obtain the following variations against time. Make sure that the system reaches the steady state, and plot following graphs from t=0 to steady state.
 
    * Motor speed and torque
    * Back-emf voltage and current
-   * Motor torque and load torque
-   * Motor speed and load speed
+   * Motor torque and load torque (referred to motor side)
+   * Motor speed and load speed (referred to motor side)
    * Overall system efficiency
 
-2. Decrease the armature voltage to its 50% when the system is operating at its steady state at the rated values and plot the following:
+**Part 2.** This part to be completed with Model-II
+
+Decrease the armature voltage to 50% of the rated value when the motor is running at steady state at the rated values and plot the following:
 
    *	Motor speed and torque
-   *	Armature voltage, current and electric power (comment on the operating mode)
+   *	Armature voltage, current and electric power
    *	Motor torque and load torque
-   *	Motor speed and load speed
+   *	Motor speed and load speed (referred to motor side)
 
-3. Design a voltage controller such that the start-up armature current never exceeds 150% of its rated value (use a simple controlled voltage source, do not use power electronic circuits yet in this project).
+**Part 3.** This part to be completed with Model-III 
+
+Design a voltage controller such that the start-up armature current never exceeds 150% of its rated value (use a simple controlled voltage source, do not use power electronic circuits yet in this project).
 
    *  Motor speed and torque
    *  Armature voltage and current
@@ -55,7 +61,7 @@ You will analyze three models that you have constructed using the conditions giv
 
 #### Part C: Comments
 
-Please explain both your models and your details as detailed as possible. You will be supplied with an evaluation sheet in the following days to help you determine the contents of your report. 
+Comments are the most important section of your project report. Please explain both your models and results as detailed as possible. This part does not need to be a separate part, but the comments can be included after each analysis part. Please refer to [evaluation sheet](https://github.com/odtu/ee462/blob/master/Project_1/evaluation.md) for details. 
 
 ## Deadline:
 27/03/2017 23:59
@@ -72,6 +78,6 @@ Please explain both your models and your details as detailed as possible. You wi
 
 You have to submit at least the following files:
 
-- The Simulink models (either as a separate files or a combined model)
+- The Simulink models (either as three separate files or a combined model)
 - A project report describing your models in detail (Your simulation results should be embedded in your report).
 
