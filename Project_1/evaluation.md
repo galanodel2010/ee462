@@ -71,7 +71,7 @@ For this project following will be checked in your reports and in your models:
 - Comments (10 pts)
     - General comments on the the operation
     - Comment on the time it takes to accelerate with the results you obtained in Part-1.
-    - Roughly estimate and compare the energy dissipated (in Joules) in the armature resistance(Ra) in Part-1 and Part-3 during the acceleration period. Comment on the effect on that on the machine temperature rise.
+    - Roughly estimate and compare the energy dissipated (in Joules) in the armature resistance(Ra) in Part-1 and Part-3 during the acceleration period. Comment on the effect of these two starting methods on the temperature rise of the motor.
     - Propose a method for soft-starting the motor practically, if you didn't have an ideal controllable voltage source.
 
 **Model Quality**: (5pts)
