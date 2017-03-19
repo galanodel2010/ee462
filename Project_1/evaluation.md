@@ -12,9 +12,9 @@ The project will be evaluated using the following guideline:
 
 In this project the expected number of commits on different days is 5. Each days you made at least one commit is 4 points (saturating at 20 points). Thus, if you made 4 commits at 2 days, you'll get 10 points. The following rules apply:
 
-- You commit has be a meaningful and considerable change has to be made with the previous version. For example, just changing a few words in your report is not a meaningful commit.
+- Your commit has be a meaningful, and considerable amount of change has to be made to the previous version. For example, just changing a few words in your report is not a meaningful commit.
 
-- Number of days that you committed will be evaluated by common sense. For example, a commit at 23:59 and another commit at 00:02 will still count as one.
+- Number of days that you committed will be evaluated by common sense. For example, a commit at 23:58 and another commit at 00:02 will still count as one.
 
 - Do not try to find a workaround. Just spend time on your project, and improve your models regularly and it should be fine.
 
