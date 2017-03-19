@@ -47,10 +47,12 @@ You report quality will be evaluated using the following criteria:
 
 For this project following will be checked in your reports and in your models:
 
-- All three models are 
+- All three models are running properly and the results are consistent with each other.
+-
 
 
 
 **Model Quality**
+- Model filenames are proper and self-explanatory 
 - Model is [neat](http://blogs.mathworks.com/pick/2014/04/25/clean-up-your-simulink-model/) and tidy.
-- All signals are properly labelled.
+- All signals in the model are properly labeled.
