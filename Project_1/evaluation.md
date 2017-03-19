@@ -30,16 +30,16 @@ You'll get 5 points from the content of your commit messages. You are supposed t
 
 You report quality will be evaluated using the following criteria:
 
-- The report has a separate title page (2 pts*)
+- The report has a separate title page (2pts*)
 - The report has a table of contents page (2pts*)
-- The report has an introduction section that briefly explains the content of the report (4pts)
-- The report organized properly with clear sections and subsections (4pts)
-- All figures and tables have proper captions (4pts)
+- The report has an introduction section that briefly explains the content of the report (3pts)
+- The report organized properly with clear sections and subsections (2pts)
+- All figures and tables have proper captions (3pts)
 - The graphs have proper axes labels and font size of labels is adequate (3pts)
-- The graphs does not have the [default black background](people.uncw.edu/hermanr/mat361/Printing%20Simulink%20Scope%20Image.pdf), and line colors are distinguishable (3pts)
-- All grammar/spelling correct and very well-written (hint: for a start use spell-check) (4pts)
-- The report has a conclusion section that summarizes what have been done (3 pts)
-- The report has a [bibliography](http://www.plagiarism.org/citing-sources/whats-a-bibliography/) section and all the external sources [have been cited properly](http://libguides.mit.edu/citing). Note that, this is for formatting of the citations. Any [plagiarism](http://www.plagiarism.org/plagiarism-101/what-is-plagiarism) will not be tolerated. (3pts)
+- The graphs does not have the [default black background](people.uncw.edu/hermanr/mat361/Printing%20Simulink%20Scope%20Image.pdf), and line colors are distinguishable (2pts)
+- All grammar/spelling correct and very well-written (hint: for a start use spell-check) (3pts)
+- The report has a conclusion section that summarizes what have been done (3pts)
+- The report has a [bibliography](http://www.plagiarism.org/citing-sources/whats-a-bibliography/) section and all the external sources [have been cited properly](http://libguides.mit.edu/citing). Note that, this is for formatting of the citations. Any [plagiarism](http://www.plagiarism.org/plagiarism-101/what-is-plagiarism) will not be tolerated. (2pts)
 
 (*) These points do not apply for reports written in Markdown. For those reports you"ll get the points automatically.
 
@@ -47,12 +47,17 @@ You report quality will be evaluated using the following criteria:
 
 For this project following will be checked in your reports and in your models:
 
-- All three models are running properly and the results are consistent with each other.
--
-
-
+- All three models are running properly. (3pts)
+- The results are consistent with each other. (3pts)
+- Analysis: Part-1 results (3pts)
+- Analysis: Part-2 results (3pts)
+- Analysis: Part-3 results (3pts)
+- Comments: Part-1 (10pts)
+- Comments: Part-2 (10pts)
+- Comments: Part-3 (10pts)
+- Model quality (5pts)
 
 **Model Quality**
-- Model filenames are proper and self-explanatory 
+- Model filenames are proper and self-explanatory
 - Model is [neat](http://blogs.mathworks.com/pick/2014/04/25/clean-up-your-simulink-model/) and tidy.
 - All signals in the model are properly labeled.

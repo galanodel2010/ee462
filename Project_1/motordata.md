@@ -38,9 +38,7 @@ Please refer to the data according to the number you are assigned to.
 
 If you require more information about the motors, please refer to the data sheets:
 
-- Motor #0: http://www.maxonmotor.com/maxon/view/category/motor?target=filter&filterCategory=DC-max
-
-RE 65 Ø65 mm,Part number 353301
+- Motor #0: [Maxon RE 65 Ø65 mm 353301](http://www.maxonmotor.com/medias/sys_master/root/8820831158302/16-188-EN.pdf)  
 
 - Motor #1: [Moog C42-L50-10](www.peromatic.ch/fileadmin/user_upload/PDF/MOOG/DC_MOTOREN/C42.pdf)
 
