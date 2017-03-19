@@ -21,7 +21,7 @@ Please refer to the data according to the number you are assigned to.
 | Rated speed (rpm)  | 2490 | 3226 | 2700 | 1517 | 4700 |
 | Armature resistance (Ω)    | 1.41 | 0.7 | 0.43 | 1.45 | 0.6 |
 | Armature inductance (mH)    | 0.644 | 1.3 | 0.9 | 5.4 | 0.35 |
-| Back EMF constant (volts/rad/sec)|38.9 rpm/V | 0.1413 | 0.08 | 0.5730 | 0.0191 |
+| Back EMF constant (volts/rad/sec)|0.2455 | 0.1413 | 0.08 | 0.5730 | 0.0191 |
 | Motor inertia (gcm²) | 1340 |6355| 2118 | 21890 | 155 |
 
 | Mechanical system| Load#0| Load#1| Load#2| Load#3| Load#4|
@@ -39,6 +39,10 @@ Please refer to the data according to the number you are assigned to.
 If you require more information about the motors, please refer to the data sheets:
 
 - Motor #0: http://www.maxonmotor.com/maxon/view/category/motor?target=filter&filterCategory=DC-max
+
+RE 65 Ø65 mm,Part number 353301
+
+- Motor #1: [Moog C42-L50-10](www.peromatic.ch/fileadmin/user_upload/PDF/MOOG/DC_MOTOREN/C42.pdf)
 
 - Motor #1: [Moog C42-L50-10](http://www.peromatic.ch/fileadmin/user_upload/PDF/MOOG/DC_MOTOREN/C42.pdf)
 
