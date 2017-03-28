@@ -15,7 +15,7 @@ In this project, there will be 5 different applications where motor ratings, mec
 #### Application-0: 100 kW light rail vehicle (LRV) traction system.
 #### Application-1: 3 MW locomotive traction system.
 #### Application-2: 50 kW elevator system.
-#### Application-3: 30 kW crane hoist system.
+#### Application-3: 10 kW crane hoist system.
 #### Application-4: 1 kW ... motor
 
 

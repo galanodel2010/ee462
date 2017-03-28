@@ -39,9 +39,10 @@ Fig. 1: The most general 4Q motor drive circuit
 ### Open loop control
 1. Calculate the duty cycle that should be applied to the motor to operate at its rated speed under rated load torque, in forward motoring mode. Apply the proper gate signals to the chopper according to your calculation and obtain torque and speed waveforms.
 2. Calculate the duty cycle that should be applied to the motor to operate at half of its rated speed under rated load torque, in forward motoring mode. Apply a step change to the duty cycle applied to the motor drive from the value in (1) to (2). Obtain torque and speed waveforms.
-  * %50 to %100 duty cycle
-  * %50 to %25 duty cycle (plugging mode), and comment on the practical limitations of this method
-3. Reverse motoring startup
+3. Apply a step change to the duty cycle from the value in (2) to in (1). Obtain torque and speed waveforms.
+3. Calculate the duty cycle that should be applied to the motor to operate at its rated speed under rated load torque, in reverse motoring mode. Apply the transition from forward motoring to reverse motoring mode with proper gate signals. Obtain torque and speed waveforms.
+
+Comment on the practical limitations of the methods
 
 ### Closed loop control: ???
 1. Speed loop
