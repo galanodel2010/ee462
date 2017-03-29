@@ -49,20 +49,25 @@ In this part, use the combined model (Part B-3). Set the initial capacitor volta
   * Comment on the results.
 2.  * Calculate the duty cycle that should be applied to the motor to operate at half of its rated speed under rated load torque, in forward motoring mode.
   * Apply a step change to the duty cycle applied to the motor drive from the value in (1) to (2). Obtain armature voltage, current, torque and speed waveforms.
-  * Comment on the results.
+  * Comment on the results and the operating modes. Use power semiconductor device waveforms to prove your statement.
 3.  * Apply a step change to the duty cycle from the value in (2) to in (1). Obtain armature voltage, current, torque and speed waveforms.
+  * Comment on the results and the operating modes. Use power semiconductor device waveforms to prove your statement.
 4.  * Calculate the duty cycle that should be applied to the motor to operate at its rated speed under rated load torque, in reverse motoring mode.
-  * Apply the transition from forward motoring to reverse motoring mode with proper gate signals. Obtain torque and speed waveforms.
-  * Comment on the results.
+  * Apply the transition from forward motoring to reverse motoring mode with proper gate signals. Obtain armature voltage, current, torque and speed waveforms.
+  * Comment on the results and the operating modes. Use power semiconductor device waveforms to prove your statement.
+5. * Comment on the practical limitations of the methods.
+  * Propose methods for the transitions.
 
-Comment on the practical limitations of the methods
-
-### Closed loop control: ???
-1. Speed loop
-2. Current loop
-3. Voltage loop
-
-* DC link voltage ripple comment
+### Closed loop control:
+1. * Propose and implement a PID type current controller for the DC motor drive for start-up. The aim is to accelerate the motor from standstill to its rated speed with 150% of its rated torque (hence 150% of its rated current). Constant load torque (rated) should be applied to the motor. Obtain armature voltage, current, torque and speed waveforms.
+ * Propose and implement a hysteresis (on-off) type current controller for the DC motor drive for start-up. The same requirements and specifications are valid as in (1). Obtain armature voltage, current, torque and speed waveforms.
+ * Compare the two methods and comment.
+Note that, the torque (or current reference will be provided by the user with this type of control.
+2. * Now, add a speed controller to your model, which generates the torque (or current) reference for the current controller. Notice that, this reference was applied by hand in the previous part. Now, the the control loops are combined together. This method is called double loop control. Also note that, speed reference will be set by the user, this time.
+* Test your controller by applying step change to the speed reference.
+* Explain brifly how this type of control system works, theoretically.
+HINT: If you write down very basic analytical models (differential equations), it will help you a lot. You can also utilize waveforms for your explanation.
+* Comment on the performance of your controller.
 
 ### Part II (5+3 pts).
 
