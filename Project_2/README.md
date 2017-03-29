@@ -30,17 +30,30 @@ Fig. 1: The most general 4Q motor drive circuit
 1. Design the filter component values to obtain 1% peak-to-peak ripple voltage at the DC bus (no analytic explanation is necessary, but try to choose realistic values (i.e. in the range of mH and mF)).
 2. Decide the switching frequency. Consider the electrical time constant of the motor. The armature current peak-to-peak ripple should not exceed 1%.
 
+NOTE: You may finalise your design with the simulation work in Part B; however, you need to show your theoretical approach in Part A. Applying only "trial and error" method is not accepted.
+
 ## Part B: Modeling and Simulation
-1. Model the rectifier circuit with DC link filter. Connect a resistive load and obtain voltage and current waveforms, and show that DC bus voltage ripple is less than 1%. The load resistor, which represents the power output, should be selected according to the rated power output of the motor.
-2. Model the 4Q chopper circuit along with the DC motor. Connect a constant ideal DC source to the DC bus. Drive the motor with 60% duty cycle PWM in forward motoring mode. Obtain armature voltage, armature current, torque and speed waveforms.
-3. Now, connect these two models and obtain the same characteristics asked previously for both parts. Comment on the differences on the waveforms.
+1. Model the rectifier circuit with DC link filter. Connect a resistive load (which represents the whole motor drive - motor - load combination) and obtain voltage and current waveforms, and show that DC bus voltage ripple is less than 1%. The load resistor, which represents the power output, should be selected according to the rated power output of the motor.
+2.
+  * Model the 4Q chopper circuit along with the DC motor. Connect a constant ideal DC source to the DC bus (Do not use the rectifier yet!).
+  * Construct generic a PWM subsystem which can generate gate signals for all the transistors separately and can be used for all operation mode applications (forward motoring, reverse motoring etc.).
+  * Drive the motor with 60% duty cycle PWM in forward motoring mode. Obtain armature voltage, armature current, torque and speed waveforms.
+3. Now, connect these two models and obtain the same characteristics asked previously for both parts. Comment on the differences on the waveforms; i.e., the effect of one side to another.
 
 ## Part C: Control
 ### Open loop control
-1. Calculate the duty cycle that should be applied to the motor to operate at its rated speed under rated load torque, in forward motoring mode. Apply the proper gate signals to the chopper according to your calculation and obtain torque and speed waveforms.
-2. Calculate the duty cycle that should be applied to the motor to operate at half of its rated speed under rated load torque, in forward motoring mode. Apply a step change to the duty cycle applied to the motor drive from the value in (1) to (2). Obtain torque and speed waveforms.
-3. Apply a step change to the duty cycle from the value in (2) to in (1). Obtain torque and speed waveforms.
-3. Calculate the duty cycle that should be applied to the motor to operate at its rated speed under rated load torque, in reverse motoring mode. Apply the transition from forward motoring to reverse motoring mode with proper gate signals. Obtain torque and speed waveforms.
+In this part, use the combined model (Part B-3). Set the initial capacitor voltage close to its steady state value to ignore the starting transient of rectifier.
+1.  * Obtain the torque expression of the motor in terms of speed and terminal voltage, at steady state. In addition, obtain the expression of the duty cycle in terms of speed and torque.
+  * Calculate the duty cycle that should be applied to the motor to operate at its rated speed under rated load torque, in forward motoring mode.
+  * Apply the proper gate signals to the chopper according to your calculation and obtain armature voltage, current, torque and speed waveforms. The initial motor speed should be zero.
+  * Comment on the results.
+2.  * Calculate the duty cycle that should be applied to the motor to operate at half of its rated speed under rated load torque, in forward motoring mode.
+  * Apply a step change to the duty cycle applied to the motor drive from the value in (1) to (2). Obtain armature voltage, current, torque and speed waveforms.
+  * Comment on the results.
+3.  * Apply a step change to the duty cycle from the value in (2) to in (1). Obtain armature voltage, current, torque and speed waveforms.
+4.  * Calculate the duty cycle that should be applied to the motor to operate at its rated speed under rated load torque, in reverse motoring mode.
+  * Apply the transition from forward motoring to reverse motoring mode with proper gate signals. Obtain torque and speed waveforms.
+  * Comment on the results.
 
 Comment on the practical limitations of the methods
 
