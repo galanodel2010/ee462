@@ -2,17 +2,17 @@
 
 ## How to choose the motor-load combination?
 
-The motor parameters will be assigned randomly, based on the last digit of your student number. For example if your student number is 1244839, then take the modulus 3 of the last digit:
+The motor parameters will be assigned randomly, based on the last digit of your student number. For example if your student number is 1244839, then take the modulus 2 of the last digit:
 
-mod-3 (9) = 0
+mod-2 (9) = 1
 
-Then you need to use the parameters of the Motor#0 for your project.
+Then you need to use the parameters of the Motor#1 for your project.
 
 ## Motor Data-Sheet
 
 In this project, there will be 3 different applications where motor ratings, mechanical properties and load conditions will be different.
 
-#### Application-0: 1.8 MW metro traction system.
+## Application-0: 1.8 MW Metro Taction System.
 
 In this project, you are going to model a railway traction system. The underground metro systems consists of 3 carriages, with a mass of 42 tons each, and there are two motors driving each carriage. The specifications for each traction motor are as follows:
 
@@ -26,7 +26,7 @@ In this project, you are going to model a railway traction system. The undergrou
 - Rated Torque: 4812 Nm
 - Armature Resistance: 0.058 Ω
 - Armature Inductance: 4 mH 
-- Back EMF constant: 6.68 V/rad/s (Normally, series wound DC motors are used in traction applications, but for simplicity assume a PM motor with constant field throughout this project).
+- Back EMF constant: 6.68 V/rad/s (Normally, series wound DC motors are used in traction applications, but for simplicity assume a PM motor with constant field current is used throughout this project).
 - Motor Inertia: 25 kgm²
 - Axle Shaft Inertia: 15 kgm²
 - Referred carriage inertia: 1200 kgm² (Actually, I didn't have to give this number, as you can calculate it if I say train moves at 54 km/h when the motor is rotating at 600 rpm. As a bonus, show the inertia calculation in your reports).
@@ -41,7 +41,7 @@ The specifications of the load side is as follows:
 - Deceleration limit: 1.0 m/s²
 - Jerk limit: (0.8 m/s²)/s  (implement it as a bonus)
 
-#### Application-1: 4kW elevator system.
+## Application-1: 4kW Elevator System.
 
 In this project, you are going to model an elevator system as shown in the figure below. T
 
