@@ -2,54 +2,75 @@
 
 ## How to choose the motor-load combination?
 
-The motor parameters will be assigned randomly, based on the last digit of your student number. For example if your student number is 1244839, then take the modulus 5 of the last digit:
+The motor parameters will be assigned randomly, based on the last digit of your student number. For example if your student number is 1244839, then take the modulus 3 of the last digit:
 
-mod-5 (9) = 4
+mod-3 (9) = 0
 
-Then you need to use the parameters of the Motor#4 for your project.
+Then you need to use the parameters of the Motor#0 for your project.
 
 ## Motor Data-Sheet
 
-In this project, there will be 5 different applications where motor ratings, mechanical properties and load conditions will be different.
+In this project, there will be 3 different applications where motor ratings, mechanical properties and load conditions will be different.
 
-#### Application-0: 100 kW light rail vehicle (LRV) traction system.
-#### Application-1: 3 MW locomotive traction system.
-#### Application-2: 50 kW elevator system.
-#### Application-3: 10 kW crane hoist system.
-#### Application-4: 1 kW ... motor
+#### Application-0: 1.8 MW metro traction system.
+
+In this project, you are going to model a railway traction system. The underground metro systems consists of 3 carriages, with a mass of 42 tons each, and there are two motors driving each carriage. The specifications for each traction motor are as follows:
+
+- Rated Power: 305 kW
+- Rated Voltage: 463 V
+- Max. Voltage: 700 V
+- Rated Current: 720 A
+- Max. Current: 1200 A (for 2min)
+- Rated Speed: 600 rpm
+- Max. Speed: 2000 rpm
+- Rated Torque: 4812 Nm
+- Armature Resistance: 0.058 Ω
+- Armature Inductance: 4 mH 
+- Back EMF constant: 6.68 V/rad/s (Normally, series wound DC motors are used in traction applications, but for simplicity assume a PM motor with constant field throughout this project).
+- Motor Inertia: 25 kgm²
+- Axle Shaft Inertia: 15 kgm²
+- Referred carriage inertia: 1200 kgm² (Actually, I didn't have to give this number, as you can calculate it if I say train moves at 54 km/h when the motor is rotating at 600 rpm. As a bonus, show the inertia calculation in your reports).
 
 
-Please refer to the data according to the number you are assigned to.
+The specifications of the load side is as follows:
 
-| DC motor| Motor#0| Motor#1| Motor#2| Motor#3| Motor#4|
-| :-----: |:-----:| :----:|:-----:| :----:|:-----:|
-| Rated armature voltage (V) | 70 | 48 | 24 | 90 | 12 |
-| Rated output power (W)| 250 | 192 | 121 | 359 | 26 |
-| Rated speed (rpm)  | 2490 | 3226 | 2700 | 1517 | 4700 |
-| Armature resistance (Ω)    | 1.41 | 0.7 | 0.43 | 1.45 | 0.6 |
-| Armature inductance (mH)    | 0.644 | 1.3 | 0.9 | 5.4 | 0.35 |
-| Back EMF constant (volts/rad/sec)|0.2455 | 0.1413 | 0.08 | 0.5730 | 0.0191 |
-| Motor inertia (kgm²) | 1340 |6355| 2118 | 21890 | 155 |
-| Motor friction coefficient (mNm.s/rad) | 0 |1| 2 | 3 | 4|
+- The train moves on a flat track
+- Friction coefficient: 7.5 Nm/rad/s (Referred to motor side, per motor)
+- Rated train speed: 54 km/h (when rotor speed is 600 rpm)
+- Acceleration limit: 0.8 m/s² 
+- Deceleration limit: 1.0 m/s²
+- Jerk limit: (0.8 m/s²)/s  (implement it as a bonus)
 
-| Mechanical system| Load#0| Load#1| Load#2| Load#3| Load#4|
-| :--------------: |:-----:| :----:|:-----:| :----:|:-----:|
-| Load side friction coefficient (mNm.s/rad)| 0.4 | 0.5 | 0.18 | 0.36 | 0.06 |
-| Load inertia (kgm²)            | 1800 | 9000 | 1800 | 36000 | 360 |
-| Load torque (rated) (Nm)       | 1.6 | 1.5 | 0.75 | 1.9 | 0.18 |
+#### Application-1: 4kW elevator system.
 
-* There is no gearbox in the system.
-* Combined inertia (motor + load) can be used.
-* Combined viscous friction (motor + load) can be used.
+In this project, you are going to model an elevator system as shown in the figure below. T
 
-If you require more information about the motors, please refer to the data sheets:
+![250px](./elevator.png)
 
-- Motor #0:
+The elevator consists of a counterweight and connected to the motor side with a gearbox and pulley system.
 
-- Motor #1:
+The specifications of the elevator motor are as follows:
 
-- Motor #2:
+- Rated Power: 4 kW
+- Rated Voltage: 360 V
+- Rated Current: 12.78 A
+- Max. Current: 20 A (for 3min)
+- Rated Speed: 1800 rpm
+- Max. Speed: 2000 rpm
+- Rated Torque: 21.2 Nm
+- Armature Resistance: 3.68 Ω
+- Armature Inductance: 32 mH 
+- Back EMF constant: 1.66 V/rad/s (PM DC motor)
+- Motor+Gearbox Inertia: 0.05 kgm²
+- Referred load inertia: 0.0512 kgm² (Actually, I didn't have to give this number, as you could calculate it using the dimensions given in the figure. Calculate it as a bonus in your report.).
 
-- Motor #3:
+The specifications of the load side is as follows:
 
-- Motor #4:
+- Neglect friction losses
+- Carried mass: 400kg
+- Elevator cabin mass: 100 kg
+- Counterweight mass: 300 kg
+- The gravitational load torque: 15.7 Nm (referred to the motor side)
+- Cabin max. speed: 1.4 m/s (referred motor speed 1671 rpm)
+- Acceleration time: 3s
+- Deceleration time: 5s
