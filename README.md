@@ -8,10 +8,10 @@ The requirements for each project are listed in the relevant folders.
 Simulating start-up of a DC motor
 
 ## Project-1:
-TBA
+Modeling a DC-motor drive system
 
 ## Project-2:
-TBA
+Modeling a four-quadrant chopper DC-motor drive system
 
 ## Project-3:
 TBA
