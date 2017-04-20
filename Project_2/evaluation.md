@@ -4,9 +4,9 @@ The project will be evaluated using the following guideline:
 
 **Number of Commits:25%:** The number of edits of your project files as seen from the contributors list. For example, if you start making your project in the last few days, you’ll get no credit. If you start early and continue editing your files, you’ll get full credit. The project topics are not easy, so this is a way to encourage you to start early and work regularly.
 
-**Report Quality:25%:** Text explaining your design decisions, quality of your figures, citing relevant studies and your conclusion section.
+**Report Quality:15%:** Text explaining your design decisions, quality of your figures, citing relevant studies and your conclusion section.
 
-**Technical Level (Part-I&II):50%:** The detail level of your designs (see requirements above), and the accuracy of your calculations.
+**Technical Level (Part-I&II):60%:** The detail level of your designs (see requirements above), and the accuracy of your calculations.
 
 **Technical Level (Part-III Bonus):15%:**
 
