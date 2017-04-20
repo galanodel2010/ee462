@@ -31,16 +31,16 @@ You'll get 5 points from the content of your commit messages. You are supposed t
 
 You report quality will be evaluated using the following criteria:
 
-- The report has a separate title page (2pts*)
-- The report has a table of contents page (2pts*)
-- The report has an introduction section that briefly explains the content and the aims of the report (3pts)
-- The report organized properly with clear sections and subsections (2pts)
-- All figures and tables have proper captions (3pts)
-- The graphs have proper axes labels and font size of labels is adequate (3pts)
-- The graphs does not have the [default black background](people.uncw.edu/hermanr/mat361/Printing%20Simulink%20Scope%20Image.pdf), and line colors are distinguishable (2pts)
-- No grammar/spelling errors and very well-written report (hint: use spell-check) (3pts)
-- The report has a conclusion section that summarizes what have been achieved (3pts)
-- The report has a [bibliography](http://www.plagiarism.org/citing-sources/whats-a-bibliography/) section and all the external sources [have been cited properly](http://libguides.mit.edu/citing). Note that, this is for formatting of the citations. Any [plagiarism](http://www.plagiarism.org/plagiarism-101/what-is-plagiarism) will not be tolerated. (2pts)
+- The report has a separate title page (1pts*)
+- The report has a table of contents page (1pts*)
+- The report has an introduction section that briefly explains the content and the aims of the report (2pts)
+- The report organized properly with clear sections and subsections (1pts)
+- All figures and tables have proper captions (2pts)
+- The graphs have proper axes labels and font size of labels is adequate (2pts)
+- The graphs does not have the [default black background](people.uncw.edu/hermanr/mat361/Printing%20Simulink%20Scope%20Image.pdf), and line colors are distinguishable (1pts)
+- No grammar/spelling errors and very well-written report (hint: use spell-check) (2pts)
+- The report has a conclusion section that summarizes what have been achieved (2pts)
+- The report has a [bibliography](http://www.plagiarism.org/citing-sources/whats-a-bibliography/) section and all the external sources [have been cited properly](http://libguides.mit.edu/citing). Note that, this is for formatting of the citations. Any [plagiarism](http://www.plagiarism.org/plagiarism-101/what-is-plagiarism) will not be tolerated. (1pts)
 
 (*) These points do not apply for reports written in Markdown. For those reports you"ll get the points automatically.
 
@@ -50,72 +50,50 @@ For this project following will be checked in your reports and in your models:
 
 **Part-A Preliminary Design**
 
-- Enough theoretical background is presented to choose the DC-link filter elements. (3pts)
-- Enough results are given to prove that 1% ripple condition is satisfied. (2pts)
+- Enough theoretical background is presented to choose the DC-link filter elements. (4pts)
+- Enough results are given to prove that 1% ripple condition is satisfied. (3pts)
 - The switching frequency is chosen properly and the chosen value is reasonable. (3pts)
 
 **Part B: Modeling and Simulation**
 
-- The designed PWM system is capable of applying four-quadrant operation, and these modes are clearly demonstrated (both with simulation results and with theoretical information). (3pts)
+- The designed PWM system is capable of applying four-quadrant operation, and these modes are clearly demonstrated (both with simulation results and with theoretical information). (4pts)
 - The system successfully driven with 0.6 duty cycle (with constant DC voltage), and the required waveforms are presented. (3pts)
-- The system is combined with the diode-rectifier, and the change in drive characteristics is well presented with enough comments. (3pts)
+- The system is combined with the diode-rectifier, and the change in drive characteristics is well presented with enough comments. (4pts)
 
 **Part C: Open Loop Control**
 
 - Forward Motoring at Rated Speed:
-    - Required duty cycle for rated speed is calculated correctly. (2pts)
+    - Required duty cycle for rated speed is calculated correctly. (3pts)
     - The required plots are presented with additional comments. (3pts)
 
 - Rated Speed to Half Speed Step Response:
-    - Required duty cycle for 0.5 rated speed is calculated correctly. (2pts)
+    - Required duty cycle for 0.5 rated speed is calculated correctly. (3pts)
     - Change in the DC-link voltage and the direction of the power flow during transient is presented. (3pts)
     - Comments on the operation mode during the transient. (3pts)
 
 **Part D: Dynamic Braking**
 
 - Braking is applied to the motor when it is running at the steady-state speed and the required plots are presented with additional comments. (3pts)
-- The methodology of choosing the braking resistor is presented. (2pts)
-- The braking chopper circuit is implemented. (2pts)
+- The methodology of choosing the braking resistor is presented. (3pts)
+- The braking chopper circuit is implemented. (3pts)
 
 **Part E: Closed Loop Control**
 
-- Some background information about PID controllers are presented. (2pts)
+- Some background information about PID controllers are presented. (3pts)
 - Current controller is implemented, and the acceleration transient is presented with required plots. (3pts)
-- Information about the selection of PID controller gains is presented. (2pts)
+- Information about the selection of PID controller gains is presented. (3pts)
 - Hysteresis current controller is presented with required plots. (3pts)
 - Two methods are compared listing the advantages and disadvantages of each system. (3pts)
 
-**Part D: Dynamic Braking**
+**Part F: Speed Controller**
 
+- Speed controller is implemented with some background information. (3pts)
+- The system accelerated from standstill to rated speed and the plots are given to prove the operation with enough comments. (2pts)
+- The system is accelerated and decelerated with within the maximum limits defined. (2pts)
+- Jerk limitation is implemented in the control loop. (2pts)
 
-**Part-1**
-- Analysis and results (3pts)
-- Comments (10 pts)
-    - General comments on the the operation
-    - How does the speed and the torque of the motor changes?
-    - What is the effect of the inertia on the acceleration. Propose a method to determine the mechanical time constant and electrical time constant.
-    - Comment on the difference of motor speed and load speed. What is the effect of the shaft stiffness in the transient response of the model?
-    - How does the efficiency changes with speed, Why?
+**Part G: Component Selection**
 
-**Part-2**
-- Analysis and results (3pts)
-- Comments (10 pts)
-    - General comments on the the operation
-    - How does the speed and the torque of the motor changes?
-    - Comment on the direction of power, and mode of operation. What kind of practical issues you will face in the practical implementation of this?
-    - What can you do to implement this kind of operation, if you only have a uni-directional power supply? 
-
-**Part-3**
-- Analysis and results (3pts)
-- Comments (10 pts)
-    - General comments on the the operation
-    - Comment on the time it takes to accelerate with the results you obtained in Part-1.
-    - Roughly estimate and compare the energy dissipated (in Joules) in the armature resistance(Ra) in Part-1 and Part-3 during the acceleration period. Comment on the effect of these two starting methods on the temperature rise of the motor.
-    - Propose a method for soft-starting the motor practically, if you didn't have an ideal controllable voltage source.
-
-**Model Quality**: (5pts)
-
-Your model files will be evaluated in the following ways: 
-
-- Model filenames are proper and self-explanatory (2 pts)
-- Blocks in the model are [neatly arranged](http://blogs.mathworks.com/pick/2014/04/25/clean-up-your-simulink-model/) and all signals are labeled for easy debugging (3pts)
+- Reasonings for choosing the suitable power electronics is presented. (2pts)
+- Commercially available components are investigated and a proper device is chosen for the transistors and the reasons behind the choice are explained. (2pts)
+ - Commercially available components are investigated and a proper device is chosen for the rectifying diodes and the reasons behind the choice is explained. (2pts)
