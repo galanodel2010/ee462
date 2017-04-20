@@ -74,3 +74,4 @@ The specifications of the load side is as follows:
 - Cabin max. speed: 1.4 m/s (referred motor speed 1671 rpm)
 - Acceleration time: 3s
 - Deceleration time: 5s
+- Jerk limit: (0.8 m/s²)/s  (implement it as a bonus)
