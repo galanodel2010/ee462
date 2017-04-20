@@ -56,10 +56,17 @@ For this project following will be checked in your reports and in your models:
 
 **Part B: Modeling and Simulation**
 
-- The designed PWM system is capable of applying four-quadrant operation
--  
-All three models are running properly without errors (3pts)
-- All three models are consistent with each other. (3pts)
+- The designed PWM system is capable of applying four-quadrant operation, and these modes are clearly demonstrated (both with simulation results and with theoretical information).
+- The system successfully driven with 0.6 duty cycle (with constant DC voltage), and the required waveforms are presented.
+- The system is combined with the diode-rectifier, and the change in drive characteristics is well presented with enough comments.
+
+**Part C: Open Loop Control**
+
+- Forward Motoring at Rated Speed:
+    - Required duty cycle for rated speed is calculated correctly.
+    - The required plots are presented with additional comments.
+
+- Rated Speed to Half Speed Step Response:
 
 **Part-1**
 - Analysis and results (3pts)
