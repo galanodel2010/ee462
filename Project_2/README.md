@@ -57,7 +57,7 @@ In this part, use the combined model (Part B-3). In Simulink, set the initial ca
 2.  Rated Speed to Half Speed Step Response:
 
 * Calculate the duty cycle that should be applied to the motor to operate at half of its rated speed under rated load torque, in forward motoring mode.
-  * Apply a step change to the duty cycle applied to the motor drive from the value in (1) to (2). Obtain the armature voltage, armature current, torque and speed waveforms adter the speed reference has been halved.
+  * Apply a step change to the duty cycle applied to the motor drive from the value in (1) to (2). Obtain the armature voltage, armature current, torque and speed waveforms after the speed reference has been halved.
   * Comment on the results and the operating modes. Comment on the limitations on this topology if the regenerative braking applied for a long time.
 
 ---
@@ -69,9 +69,9 @@ In this part, use the combined model (Part B-3). In Simulink, set the initial ca
 
 ## Part D: Dynamic Braking
 
-3. Design of the Dynamic Brake System: In the previous part you should have observed the DC-link voltage increases dangerously. To prevent that a braking resistor should be used.
+3. Design of the Dynamic Brake System: In the previous part you might have observed the DC-link voltage increases dangerously. To prevent that a braking resistor should be used.
 
-* What will happen when the drive is kept in the braking state for a long time without the braking resistor? Prove your statement with simulation outputs (i.e. DC-link capacitor voltage, braking torque vs. time).
+* What will happen when the drive is kept in the braking state for a long time without the braking resistor? Prove your statement with simulation outputs (i.e. DC-link capacitor voltage, braking torque, speed, mechanical power vs. time).
 
 * Choose the ratings of the dynamic braking resistor (i.e. resistance, current rating, voltage rating). 
 
@@ -106,7 +106,7 @@ In this part, use the combined model (Part B-3). In Simulink, set the initial ca
 
 2. Select a commercially available transistor (with anti-parallel diodes) and explain your reasoning. Use simulation outputs to prove your statement. (You can start your search from [Semikron](https://www.semikron.com/products/product-classes/igbt-modules.html), [ABB](http://new.abb.com/semiconductors) catalogues)
 
-3. Select rectifier diodes. (You can start your search from [Semikron](https://www.semikron.com/products/product-classes/igbt-modules.html), [ABB](http://new.abb.com/semiconductors) catalogues)
+3. Select rectifier diodes. (You can start your search from [Semikron](https://www.semikron.com/products/product-classes/igbt-modules.html), [ABB](http://new.abb.com/semiconductors) catalogs)
 
 Comments are the most important section of your project report. Please explain both your models and results as detailed as possible. This part does not need to be a separate part, but the comments can be included after each analysis part. Please refer to [evaluation sheet](https://github.com/odtu/ee462/blob/master/Project_1/evaluation.md) for details.
 

@@ -50,23 +50,43 @@ For this project following will be checked in your reports and in your models:
 
 **Part-A Preliminary Design**
 
-- Enough theoretical background is presented to choose the DC-link filter elements
-- Enough results are given to prove that 1% ripple condition is satisfied.
-- The switching frequency is chosen properly and the chosen value is practical
+- Enough theoretical background is presented to choose the DC-link filter elements. (3pts)
+- Enough results are given to prove that 1% ripple condition is satisfied. (2pts)
+- The switching frequency is chosen properly and the chosen value is reasonable. (3pts)
 
 **Part B: Modeling and Simulation**
 
-- The designed PWM system is capable of applying four-quadrant operation, and these modes are clearly demonstrated (both with simulation results and with theoretical information).
-- The system successfully driven with 0.6 duty cycle (with constant DC voltage), and the required waveforms are presented.
-- The system is combined with the diode-rectifier, and the change in drive characteristics is well presented with enough comments.
+- The designed PWM system is capable of applying four-quadrant operation, and these modes are clearly demonstrated (both with simulation results and with theoretical information). (3pts)
+- The system successfully driven with 0.6 duty cycle (with constant DC voltage), and the required waveforms are presented. (3pts)
+- The system is combined with the diode-rectifier, and the change in drive characteristics is well presented with enough comments. (3pts)
 
 **Part C: Open Loop Control**
 
 - Forward Motoring at Rated Speed:
-    - Required duty cycle for rated speed is calculated correctly.
-    - The required plots are presented with additional comments.
+    - Required duty cycle for rated speed is calculated correctly. (2pts)
+    - The required plots are presented with additional comments. (3pts)
 
 - Rated Speed to Half Speed Step Response:
+    - Required duty cycle for 0.5 rated speed is calculated correctly. (2pts)
+    - Change in the DC-link voltage and the direction of the power flow during transient is presented. (3pts)
+    - Comments on the operation mode during the transient. (3pts)
+
+**Part D: Dynamic Braking**
+
+- Braking is applied to the motor when it is running at the steady-state speed and the required plots are presented with additional comments. (3pts)
+- The methodology of choosing the braking resistor is presented. (2pts)
+- The braking chopper circuit is implemented. (2pts)
+
+**Part E: Closed Loop Control**
+
+- Some background information about PID controllers are presented. (2pts)
+- Current controller is implemented, and the acceleration transient is presented with required plots. (3pts)
+- Information about the selection of PID controller gains is presented. (2pts)
+- Hysteresis current controller is presented with required plots. (3pts)
+- Two methods are compared listing the advantages and disadvantages of each system. (3pts)
+
+
+
 
 **Part-1**
 - Analysis and results (3pts)
