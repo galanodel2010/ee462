@@ -64,8 +64,7 @@ In this part, use the combined model (Part B-3). In Simulink, set the initial ca
 
 # Part II (30 pts)
 
-### Part II Deadline:
-25/04/2017 03:59
+### Part II Deadline: 25/04/2017 03:59
 
 
 ## Part D: Dynamic Braking
@@ -88,8 +87,9 @@ In this part, use the combined model (Part B-3). In Simulink, set the initial ca
 3. Compare the two methods and comment. What are the advantages and disadvantages of each method.
 
 ---
-# Part III (25 pts Bonus)
-Deadline: 25/04/2017 03:59
+# Part III (30 pts Bonus)
+
+### Part III Deadline: 25/04/2017 03:59
 
 ## Part F: Speed Controller
 
