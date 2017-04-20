@@ -85,7 +85,7 @@ For this project following will be checked in your reports and in your models:
 - Hysteresis current controller is presented with required plots. (3pts)
 - Two methods are compared listing the advantages and disadvantages of each system. (3pts)
 
-
+**Part D: Dynamic Braking**
 
 
 **Part-1**
