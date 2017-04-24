@@ -32,20 +32,21 @@ Fig. 1: The induction motor drive system
 
 ## Part A: Motor characterisation
 
-1. Using the motor rated values and test data, obtain the torque-speed curve of the induction motor assigned to you.
+1. Using the motor rated values and test data, obtain and plot the **torque-speed curve** of the induction motor assigned to you using MATLAB.
 2. Determine starting torque, pull-out torque and rated torque values.
 3. Plot torque-speed curves at 4 different V/f combinations on the same graph.
 
 ## Part B: Drive proposition
 
-1. Considering the supply, motor and load requirements, propose a power stage topology for you motor drive system. Draw the circuit diagram and explain the components. Give full reasoning !
-2. Propose the measured paramaters (sensing) and control variable(s). Explain your proposition.
+1. Considering the supply, motor and load requirements, propose a **power stage topology** for the motor drive system. Draw the circuit diagram and explain the components. Give full reasoning !
+2. Define the measured paramaters (sensing) and control variable(s). Explain your proposition.
+3. Sketch a block diagram showing the closed loop control system and define each part. Note that your diagram may be composed of multiple stages.
 
 **NOTES**
-* Although this part has low credit, it is very critical in this project. You will continue with the next parts building on this one.
+* Although this part has low credit, it is very critical in this project. You will continue with the next parts building on this part.
 * Consider all the requirements asked from you, not just a regular drive application.
 * Your drive system may be composed of more than one controlled stage. In that case, indicate the asked parameters for all of them.
-* Your drive may not be the most optimum one, it is OK. But, your proposition should be reasonable.
+* Your drive may not be the most optimum one, it is OK. But, your proposition should be reasonable and implementable.
 
 # Part II :(30 pts)
 
@@ -53,6 +54,19 @@ Fig. 1: The induction motor drive system
 
 ## Part C: Modeling and open loop control
 
+1. Design an **open loop control system (Volts/Hertz)** for your motor drive. The control system should be capable of:
+  * Soft-start the motor
+  * Control the speed with a given reference
+
+Note that, this design includes selection of **switching frequency**.
+2. Calculate the **control variables** and the **actual operating speed** for the following conditions, at steady state. You can utilize the model in Part A.
+  * Forward motoring, rated load torque, rated speed
+  * Forward motoring, rated load torque, half of the rated speed
+  * Forward motoring, half of the rated load torque, rated speed
+  * Forward generating, rated load torque, rated speed
+  * Forward generating, rated load torque, half of the rated speed
+  * Forward generating, half of the rated load torque, rated speed
+2. Model the motor drive topology you proposed, and the open loop control system you designed, in MATLAB/Simulink. Apply proper references and verify the above calculations in the simulation.
 
 # Part III :(30 pts)
 
@@ -60,11 +74,18 @@ Fig. 1: The induction motor drive system
 
 ## Part D: Component selection and verification
 
+1. Select the **power semiconductor devices** (diodes, IGBTs etc.) in your motor drive system using commercially available product catalogs. Give reasoning.
+2. Verify your selections by using the simulation outputs at rated conditions (device voltages, currents etc.).
 
 ## Part E: Loss characterisation and efficiency calculation
 
-## Part F: Performance evaluation
+1. Calculate **semiconductor device power losses** using simulation outputs, and device datasheet parameters. Explain each method, paramater, approximation and indicate any source you used.
+2. Find the **efficiency** of the motor drive system ar rated conditions. Discuss the results you found.
 
+**NOTES:**
+* There are several ways for loss calculation. Getting accurate results takes too much effort. Therefore, use approximate methods from applications notes.
+* The aim of this project is not designing the most optimum or the most efficienct motor drive system. Whenever you think the performance of the motor drive is not good, comment on it and discuss how it can be improved.
+* If you find too unrealistic values (for example 10% efficieny), go back to your design. Either you made a critical mistake in the design, or your calculations are not acurate.
 
 # Part IV :(20 pts)
 
@@ -72,8 +93,18 @@ Fig. 1: The induction motor drive system
 
 ## Part G: Operating modes
 
+1. Using your model, apply the following operating modes and obtain the related results (torque, speed etc.):
+  * d
+  * d
+  * d
+  * d
+2. Comment the results.  
+
 ## Part H: Closed loop control
 
+1. Model the closed loop system you proposed previously on MATLAB/Simulink.
+2. Verify your design by showing a few sample results. Note that, the results should show that your closed loop model works properly. Therefore, include necessary simulation outputs.
+3. Comment on the results.
 
 # Part V :(20 pts-bonus)
 
@@ -81,11 +112,7 @@ Fig. 1: The induction motor drive system
 
 ## Field oriented control
 
-# Part VI :(20 pts-bonus)
 
-### Part VI Deadline: 09/06/2017 03:59
-
-## PWM rectifier
 
 
 Comments are the most important section of your project report. Please explain both your models and results as detailed as possible. Please refer to [evaluation sheet](https://github.com/odtu/ee462/blob/master/Project_3/evaluation.md) for details.
