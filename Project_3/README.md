@@ -1,10 +1,10 @@
-# Project-3: Design of induction motor drive
+# Project-3: Design of Induction Motor Drive
 
 ## Definition
 
 In this project, you will be dealing with:
 
-* Characterisation of the motor from the given data
+* Characterization of the motor from the given data
 * Designing induction motor drive system for a specific application
   * Drive topology proposition
   * Power stage design
@@ -28,19 +28,19 @@ Fig. 1: The induction motor drive system
 
 # Part I :(20 pts)
 
-### Part I Deadline: 05/05/2017 03:59
+### Part I Deadline: 09/05/2017 03:59
 
-## Part A: Motor characterisation
+## Part A: Motor Characterization
 
-1. Using the motor rated values and test data, obtain and plot the **torque-speed curve** of the induction motor assigned to you using MATLAB.
-2. Determine starting torque, pull-out torque and rated torque values.
-3. Plot torque-speed curves at 4 different **V/f** combinations on the same graph.
+1. Using the motor specs and and test data, obtain and plot the **torque-speed characteristics** of the induction motor assigned to you using MATLAB (not Simulink).
+2. Determine the starting torque, pull-out torque and the rated torque values, both analytically and label the relevant points in the graph.
+3. Plot torque-speed curves at 4 different **Constant Volts/Hertz** combinations on the same graph. Comment on how will affect to have constant E/f compared to constant V/f.
 
 ## Part B: Drive proposition
 
-1. Considering the supply, motor and load requirements, propose a **power stage topology** for the motor drive system. Draw the circuit diagram and explain the components. Give full reasoning !
-2. Define the measured (sensing) paramater(s) and control variable(s). Explain your proposition.
-3. Sketch a block diagram showing the closed loop control system and define each part. Note that your diagram may be composed of multiple control stages.
+1. Considering the supply, motor and load requirements, propose a **power stage topology** for a four-quadrant speed controlled motor drive system. Draw the circuit diagram and explain the components. Give full reasoning.
+2. Define the measured parameters (i.e. required sensors) and your control control variables. Explain your proposition.
+3. Sketch a block diagram showing the closed loop control system and define each part. Note that your diagram may be composed of multiple control stages. Do not copy the control block from the Internet, and explain the subsystems in detail.
 
 **NOTES**
 * Although this part has low credit, it is very critical in this project. You will continue with the next parts building on this part.
@@ -50,16 +50,16 @@ Fig. 1: The induction motor drive system
 
 # Part II :(30 pts)
 
-### Part II Deadline: 12/05/2017 03:59
+### Part II Deadline: 16/05/2017 03:59
 
 ## Part C: Modeling and open loop control
 
-1. Design an **open loop control system (Volts/Hertz)** for your motor drive. The control system should be capable of:
-  * Soft-start the motor
-  * Control the speed with a given reference
+1. Design an **open loop control system (constant Volts/Hertz)** for your motor drive. The control system should be capable of:
+  * Soft-starting the motor (the starting current should not exceed twice of the rated current).
+  * Control the speed with a given reference input.
 
 Note that, this design includes selection of **switching frequency**.
-2. Calculate the **control variables** and the **actual operating speed** for the following conditions, at steady state. You can utilize the model in Part A.
+2. Calculate the **control variables** and the **actual operating speed** for the following conditions, at steady state. You can utilize the model you built in Part A.
   * Forward motoring, rated load torque, rated speed
   * Forward motoring, rated load torque, half of the rated speed
   * Forward motoring, half of the rated load torque, rated speed
@@ -79,15 +79,15 @@ Note that, this design includes selection of **switching frequency**.
 
 **NOTE:** You can also utilize your simulation models for component selection where necessary.  
 
-## Part E: Loss characterisation and efficiency calculation
+## Part E: Loss characterization and efficiency calculation
 
-1. Calculate **semiconductor device power losses** using simulation outputs, and device datasheet parameters. Explain each method, paramater, approximation and indicate any external source you used. It is highly advised to use **application notes** published by semiconductor device manufacturers.
-2. Find the **efficiency** of the motor drive system ar rated conditions. Discuss the results you found.
+1. Calculate **semiconductor device power losses** using simulation outputs, and device datasheet parameters. Explain each method, parameter, approximation and indicate any external source you used. It is highly advised to use **application notes** published by semiconductor device manufacturers.
+2. Find the **efficiency** of the motor drive system at the rated conditions. Discuss the results you found.
 
 **NOTES:**
 * There are several ways for loss calculation. Getting accurate results takes too much effort. Therefore, use approximate methods from applications notes.
-* The aim of this project is not designing the most optimum or the most efficienct motor drive system. Whenever you think the performance of the motor drive is not good, comment on it and discuss how it can be improved. Do not try to soap down.
-* If you find unrealistic values (for example 10% efficieny), go back to your design. Either you made a critical mistake in the design, or your calculations are not accurate.
+* The aim of this project is not designing the most optimum or the most efficient motor drive system. Whenever you think the performance of the motor drive is not good, comment on it and discuss how it can be improved. Do not try to soap down.
+* If you find unrealistic values (for example 10% efficiency), go back to your design. Either you made a critical mistake in the design, or your calculations are not accurate.
 
 # Part IV :(20 pts)
 
