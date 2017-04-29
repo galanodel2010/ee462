@@ -2,11 +2,30 @@
 
 ## How to choose the motor-load combination?
 
-The motor parameters will be assigned randomly, based on the last digit of your student number. For example if your student number is 1244839, then take the modulus 4 of the last digit:
+The motor parameters will be assigned randomly, based on the last digit of your student number. For example if your student number is 1244839, then take the modulus 3 of the last digit:
 
-mod-4 (9) = 1
+mod-3 (9) = 0
 
-Then you need to use the parameters of the Motor#1 for your project.
+Then you need to use the parameters of the Motor#0 for your project.
+
+
+
+| Motor        | #0 | #1 | #2   |
+|--------------|-----------|-------------------|---|
+| Rated Power  |160 kW| |  | 
+| Reted Speed  |1487 rpm| |  | 
+| Rated Voltage (l-l)  |400| |  | 
+| Rated Frequency  |50 Hz| |  | 
+| Stator Resistance (Rs) | 13.79 mΩ | |  |
+| Stator Inductance (Ls) | 0.152 mH | |  |
+| Rotor Resistance (Rr') | 7/728 mΩ | |  |
+| Rotor Inductance | 0.152 mH  | |  |
+| Magnetizing Inductance (Lm) | 7.69 mH | |  |
+| Total Inertia (Load+Motor) | 5.5 kgm² | |  |
+| Friction (F) | 0.05658 Nms | |  |
+| Pole Pairs | 2 | |  |
+
+
 
 ## Motor Data-Sheet
 
