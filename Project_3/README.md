@@ -26,7 +26,7 @@ Fig. 1: The induction motor drive system
 
 # Project Content
 
-# Part I :(20 pts)
+# Part I :(15 pts)
 
 ### Part I Deadline: 09/05/2017 03:59
 
@@ -49,7 +49,7 @@ Fig. 1: The induction motor drive system
 * Your drive system may be composed of more than one controlled stage. In that case, indicate the asked parameters for all of them.
 * Your drive may not be the most optimum one, it is OK. However, your proposition should be reasonable and implementable.
 
-# Part II :(30 pts)
+# Part II :(20 pts)
 
 ### Part II Deadline: 16/05/2017 03:59
 
@@ -67,7 +67,7 @@ Fig. 1: The induction motor drive system
 
 **THE PARTS BELOW ARE STILL IN THE DRAFT VERSION!**
 
-# Part III :(30 pts)
+# Part III :(25 pts)
 
 ### Part III Deadline: 27/05/2017 03:59
 
@@ -104,7 +104,6 @@ Fig. 1: The induction motor drive system
 # Part IV :(20 pts)
 
 ## Part G (BONUS): Operating modes
-
 
 ### Part IV Deadline: Until Final
 
