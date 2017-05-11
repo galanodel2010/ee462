@@ -49,7 +49,7 @@ Fig. 1: The induction motor drive system
 * Your drive system may be composed of more than one controlled stage. In that case, indicate the asked parameters for all of them.
 * Your drive may not be the most optimum one, it is OK. However, your proposition should be reasonable and implementable.
 
-# Part II :(20 pts)
+# Part II :(15 pts)
 
 ### Part II Deadline: 16/05/2017 03:59
 
@@ -67,9 +67,9 @@ Fig. 1: The induction motor drive system
 
 **THE PARTS BELOW ARE STILL IN THE DRAFT VERSION!**
 
-# Part III :(25 pts)
+# Part III :(30 pts)
 
-### Part III Deadline: 27/05/2017 03:59
+### Part III Deadline: 29/05/2017 03:59
 
 ## Part D: Closed Loop Control
 
@@ -79,40 +79,41 @@ Fig. 1: The induction motor drive system
 
     * Implement a soft-starting algorithm (the starting current should not exceed twice of the rated current).
     * Show the speed regulation of the drive (Initially set the speed reference to 1000 rpm at rated load. Once the motor reached to steady state, instantaneously remove the load (no-load), and plot the speed and torque generated as a function of time).
-    * Implement speed bandwidth test (Set the speed reference to rated speed at rated load and suddenly set the speed reference to -rated speed (i.e. opposite direction))
-    * Implement flux weakening operating mode (Implement a high speed operation (1.5 pu of the rated speed).
+    * Measure the speed bandwidth of your drive (i.e. set the speed reference to the rated speed at no load and when machine is operating under steady-state conditions, suddenly set the speed reference to -rated speed (i.e. opposite direction). During the transition plot the relevant figures (i.e. speed, generated torque, current, applied voltage etc.,)
+    * Implement flux weakening operating mode (Rotate the motor at 1.5 pu of the rated speed with 0.5 pu of the rated load). Don't forget to keep applied voltage constant at the rated value.
 
-3. Comment on the results.
+3. Comment on the results of the performance of your closed loop control.
 
 
 ## Part E: Component selection and verification
 
-1. Select the **power semiconductor devices** (diodes, IGBTs etc.) in your motor drive system using commercially available product catalogs. **Give reasoning.**
-2. **Verify** your selections by using the simulation outputs at rated conditions (device voltages, currents etc.).
-
-**NOTE:** You can also utilize your simulation models for component selection where necessary.  
+1. Select suitable **power semiconductor devices** (diodes, IGBTs etc.) for your motor drive system using commercially available product catalogs. **Give your reasonings.**
+2. By using your previous simulation results, **verify** your selections can work with all operating conditions (i.e. check the maximum voltage, current, etc).
 
 ## Part F: Loss characterization and efficiency calculation
 
-1. Calculate **semiconductor device power losses** using simulation outputs, and device datasheet parameters. Explain each method, parameter, approximation and indicate any external source you used. It is highly advised to use **application notes** published by semiconductor device manufacturers.
-2. Find the **efficiency** of the motor drive system at the rated conditions. Discuss the results you found.
+1. Approximately calculate **semiconductor device power losses** using simulation outputs, and device data-sheet parameters. Explain each method, parameter, indicate any external source you have used. It is highly advised to use **application notes** published by the semiconductor device manufacturers.
+2. Find the **efficiency** of the motor drive system at the rated conditions. Then calculate the overall efficiency (including the efficiency of the motor). Comment on  the results you found, and discuss how you could achieve a higher efficiency.
 
 **NOTES:**
 * There are several ways for loss calculation. Getting accurate results takes too much effort. Therefore, use approximate methods from applications notes.
-* The aim of this project is not designing the most optimum or the most efficient motor drive system. Whenever you think the performance of the motor drive is not good, comment on it and discuss how it can be improved. Do not try to soap down.
-* If you find unrealistic values (for example 10% efficiency), go back to your design. Either you made a critical mistake in the design, or your calculations are not accurate.
+* The aim of this project is not designing the most optimum or the most efficient motor drive system. Whenever you think the performance of the motor drive is not good, just comment on it and discuss how it can be improved.
+* If you find unrealistic values (for example 10% efficiency), go back to your design. It's highly probable that you made a calculation mistake, but if it's really that low, then you need to modify your design.
 
-# Part IV :(20 pts)
+# Part IV (BONUS) :(20 pts)
 
-## Part G (BONUS): Operating modes
+### Part IV Deadline: Until 
 
-### Part IV Deadline: Until Final
+## Part G: Field oriented control
 
-## Field oriented control
-
-Comments are the most important section of your project report. Please explain both your models and results as detailed as possible. Please refer to [evaluation sheet](https://github.com/odtu/ee462/blob/master/Project_3/evaluation.md) for details.
+1. Read about the field oriented control (FOC) for induction motor drives. Give a brief summary (1-2 pages) about the theory of operation.
+2. Implement a FOC system to your drive. In this stage, you are free to use readily available models (for example MATLAB has a few nice examples), but don't forget to use your own motor parameters, including the current limits. Define how you calculated reference id and iq values.
+3. Start your motor from zero speed to rated speed, and plot the relevant figures. Compare this with starting the motor with direct voltage start and closed-loop V/f control.
+4. Implement a bandwidth test as you did with the closed-loop control. Compare and comment the performance of the field oriented control method.
 
 ## HINTS:
+
+Comments are the most important section of your project report. Please explain both your models and results as detailed as possible. Please refer to [evaluation sheet](https://github.com/odtu/ee462/blob/master/Project_3/evaluation.md) for details.
 
 * When constructing the models, go **step-by-step**. First built a few components, check if it is working as intended, if it works then add new components. Do not try to implement the whole model at once, expect it to work without any problems.
 * Always be aware to use **correct units**.
