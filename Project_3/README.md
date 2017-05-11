@@ -102,7 +102,7 @@ Fig. 1: The induction motor drive system
 
 # Part IV (BONUS) :(20 pts)
 
-### Part IV Deadline: Until 
+### Part IV Deadline: Until the final exam
 
 ## Part G: Field oriented control
 
