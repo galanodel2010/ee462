@@ -62,7 +62,7 @@ Fig. 1: The induction motor drive system
     - Repeat the previous step with half of the rated voltage and half of the rated frequency. 
     - Compare the two cases and comment. Verify the steady state speed for the above conditions analytically as well.
 
-3. **Analytically** calculate the required voltage and frequency (under constant V/f operation) to run the motor at a rated speed of 0.1 pu under rated load. Then verify your analytical calculations with your simulations. Comment for any discrepancies and modify your analytical calculations if required.
+3. **Analytically** calculate the required voltage and frequency (under constant V/f operation) to run the motor at a 0.1 pu of the rated speed, under rated load. Then verify your analytical calculations with your simulations. Comment for any discrepancies and modify your analytical calculations if required.
 
 
 **THE PARTS BELOW ARE STILL IN THE DRAFT VERSION!**
@@ -75,14 +75,15 @@ Fig. 1: The induction motor drive system
 
 1. Model the closed loop system you proposed in previous parts, on MATLAB/Simulink.
 2. Verify your design by showing a few sample results. Note that, the results should show that your closed loop model works properly. Therefore, include necessary simulation outputs.
+3.  Do the following tests using the close loop control:
+
+    * Implement a soft-starting algorithm (the starting current should not exceed twice of the rated current).
+    * Show the speed regulation of the drive (Initially set the speed reference to 1000 rpm at rated load. Once the motor reached to steady state, instantaneously remove the load (no-load), and plot the speed and torque generated as a function of time).
+    * Implement speed bandwidth test (Set the speed reference to rated speed at rated load and suddenly set the speed reference to -rated speed (i.e. opposite direction))
+    * Implement flux weakening operating mode (Implement a high speed operation (1.5 pu of the rated speed).
+
 3. Comment on the results.
 
-* Soft-starting the motor (the starting current should not exceed twice of the rated current).
-
-* Speed regulation (from rated load to no load condition)
-* Control bandwidth test (from positive to negative speed change)
-
-* Flux weakening range
 
 ## Part E: Component selection and verification
 
