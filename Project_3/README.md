@@ -64,9 +64,6 @@ Fig. 1: The induction motor drive system
 
 3. **Analytically** calculate the required voltage and frequency (under constant V/f operation) to run the motor at a 0.1 pu of the rated speed, under rated load. Then verify your analytical calculations with your simulations. Comment for any discrepancies and modify your analytical calculations if required.
 
-
-**THE PARTS BELOW ARE STILL IN THE DRAFT VERSION!**
-
 # Part III :(30 pts)
 
 ### Part III Deadline: 29/05/2017 03:59
