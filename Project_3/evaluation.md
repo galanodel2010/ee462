@@ -1,4 +1,4 @@
-## Evaluation Guideline for Project #2
+## Evaluation Guideline for Project #3
 
 The project will be evaluated using the following guideline:
 
@@ -8,24 +8,11 @@ The project will be evaluated using the following guideline:
 
 **Technical Level (Part-I&II):60%:** The detail level of your designs (see requirements above), and the accuracy of your calculations.
 
-**Technical Level (Part-III Bonus):15%:**
+**Technical Level (Part-III Bonus):20%:**
 
 ## Number of Commits:
 
-In this project the expected number of commits on different days is 10. Each days you made at least one commit is 2 points (saturating at 20 points). Thus, if you made 4 commits at 3 days, you'll get 6 points. The following rules apply:
-
-- Your commit has to be a meaningful, and considerable amount of change has to be made compared to the previous version. For example, just changing a few words in your report is not a meaningful commit.
-
-- Number of days that you committed will be evaluated by common sense. For example, a commit at 23:58 and another commit at 00:02 will still count as one.
-
-- Do not try to find a workaround. Just spend time on your project, and improve your models regularly and it should be fine.
-
-You'll get 5 points from the content of your commit messages. You are supposed to write clear and explanatory commit messages, listing what  specific improvements that you made in that version. Please have a look at the following links:
-
-- [Writing Good Commit Messages](https://vip.wordpress.com/documentation/commit-messages/)
-- [What makes a good commit message?](https://hackernoon.com/what-makes-a-good-commit-message-995d23687ad#.o13dxmu3u)
-
-![](https://imgs.xkcd.com/comics/git_commit.png)
+In this project the expected number of commits on different days is **10**. Each days you made at least one commit is 2 points (saturating at 20 points). You'll get 5 points from the content of your commit messages. You are supposed to write clear and explanatory commit messages, listing what  specific improvements that you made in that version.
 
 ## Report Quality:
 
@@ -48,52 +35,53 @@ You report quality will be evaluated using the following criteria:
 
 For this project following will be checked in your reports and in your models:
 
-**Part-A Preliminary Design**
+**Part-A Motor Characterization**
 
-- Enough theoretical background is presented to choose the DC-link filter elements. (4pts)
-- Enough results are given to prove that 1% ripple condition is satisfied. (3pts)
-- The switching frequency is chosen properly and the chosen value is reasonable. (3pts)
+- Torque-speed characteristics plot (2pts)
+- Starting torque, pull-out torque and the rated torque values are calculated (2pts)
+- Torque-speed curves at 4 different Constant V/f values (2pts)
 
-**Part B: Modeling and Simulation**
+**Part B: Drive Proposition**
 
-- The designed PWM system is capable of applying four-quadrant operation, and these modes are clearly demonstrated (both with simulation results and with theoretical information). (4pts)
-- The system successfully driven with 0.6 duty cycle (with constant DC voltage), and the required waveforms are presented. (3pts)
-- The system is combined with the diode-rectifier, and the change in drive characteristics is well presented with enough comments. (4pts)
+- Power-stage topology is well explained with enough comments (2pts)
+- Required measurements are well explained (2pts)
+- Components are properly chosen and the analytical calculations and reasonng are presented (3pts)
+-  Closed-loop control block diagram is presented and explained (2pts)
 
-**Part C: Open Loop Control**
+**Part C: Open Loop V/f Control**
 
-- Forward Motoring at Rated Speed:
-    - Required duty cycle for rated speed is calculated correctly. (3pts)
-    - The required plots are presented with additional comments. (3pts)
+- Plots for starting from standstill with rated voltage (3pts)
+- Plots for Starting from standstill with half of the rated voltage (3pts)
+- Comparison of these two cases and the analytical calculations (4pts)
+- Analytical calculations for 0.1 pu speed and simulation results (5pts)
 
-- Rated Speed to Half Speed Step Response:
-    - Required duty cycle for 0.5 rated speed is calculated correctly. (3pts)
-    - Change in the DC-link voltage and the direction of the power flow during transient is presented. (3pts)
-    - Comments on the operation mode during the transient. (3pts)
+**Part D: Closed Loop Control**
 
-**Part D: Dynamic Braking**
+Verification of the closed loop operation with tests:
 
-- Braking is applied to the motor when it is running at the steady-state speed and the required plots are presented with additional comments. (3pts)
-- The methodology of choosing the braking resistor is presented. (3pts)
-- The braking chopper circuit is implemented. (3pts)
+- Starting current is limited at startup (3pts)
+- Speed regulation (from full load to no load) (3pts)
+- Speed bandwidth (from positive to negative speed) (3pts)
+- Flux weakening mode of operation (3pts)
 
-**Part E: Closed Loop Control**
+- Comments about all operating modes and self-criticism about the performance of the drive (3pts)
 
-- Some background information about PID controllers are presented. (3pts)
-- Current controller is implemented, and the acceleration transient is presented with required plots. (3pts)
-- Information about the selection of PID controller gains is presented. (3pts)
-- Hysteresis current controller is presented with required plots. (3pts)
-- Two methods are compared listing the advantages and disadvantages of each system. (3pts)
+**Part E: Component Selection and Verification**
 
-**Part F: Speed Controller**
+- Selection of components for power semiconductor devices (3pts)
+- Verification of safe operation of these selection using your previous plots (3pts)
 
-- Speed controller is implemented with some background information. (3pts)
-- The system accelerated from standstill to rated speed and the plots are given to prove the operation with enough comments. (2pts)
-- The system is accelerated and decelerated with within the maximum limits defined. (2pts)
-- Jerk limitation is implemented in the control loop. (2pts)
+**Part F: Loss characterization and efficiency calculation**
 
-**Part G: Component Selection**
+- Calculation of losses using component datasheets (3pts)
+- Calculation of the overall efficiency of the motor drive system (3pts)
+- General comments about the effciency and advices to get a higher efficiency (3pts)
 
-- Reasonings for choosing the suitable power electronics is presented. (2pts)
-- Commercially available components are investigated and a proper device is chosen for the transistors and the reasons behind the choice are explained. (2pts)
- - Commercially available components are investigated and a proper device is chosen for the rectifying diodes and the reasons behind the choice is explained. (2pts)
+**Part G: Field oriented control (BONUS)**
+
+- Brief summary about the field oriented control  (5pts)
+- FOC is implemented and the id, iq values are calculated (3pts)
+- Plots for starting from stationary to rated speed (3pts)
+- Performance comparison with V/f control (3pts)
+- Speed bandwidth test results (3pts)
+- Comparison of speed bandwidth with the V/f control (3pts)
